@@ -1,70 +1,84 @@
 .terminal {
   background-color: #0f0f0f;
-  border: var(--ids-border);
+  border: 2px solid rgba(80, 200, 120, 0.1);
   border-radius: var(--ids-border-radius);
   overflow: hidden;
   box-shadow: var(--ids-glow);
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
   font-family: var(--ids-font-mono);
   transition: transform 0.3s ease;
+  width: 100%;
 }
 
 .terminal:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+  border-color: var(--ids-sapphire);
 }
 
 .header {
   background-color: rgba(80, 200, 120, 0.05);
-  padding: 0.6rem 1rem;
+  padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  border-bottom: 1px solid rgba(80, 200, 120, 0.1);
+  gap: 2rem;
+  border-bottom: 2px solid rgba(80, 200, 120, 0.1);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header {
-    padding: 0.8rem 1.2rem;
-    gap: 1.5rem;
+    padding: 1.8rem 2.5rem;
+    gap: 2.5rem;
   }
 }
 
 .dots {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: rgba(244, 244, 244, 0.2);
 }
 
-.dot:nth-child(1) { background-color: #ff5f56; opacity: 0.6; }
-.dot:nth-child(2) { background-color: #ffbd2e; opacity: 0.6; }
-.dot:nth-child(3) { background-color: #27c93f; opacity: 0.6; }
+@media (min-width: 1024px) {
+  .dot {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.dot:nth-child(1) { background-color: #ff5f56; opacity: 0.9; }
+.dot:nth-child(2) { background-color: #ffbd2e; opacity: 0.9; }
+.dot:nth-child(3) { background-color: #27c93f; opacity: 0.9; }
 
 .title {
   color: var(--ids-emerald);
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 500;
+  letter-spacing: 4px;
+  font-weight: 700;
   opacity: 0.9;
 }
 
-.content {
-  padding: 1.2rem;
-  color: var(--ids-text);
-  line-height: 1.6;
-  font-size: 0.9rem;
+@media (min-width: 1024px) {
+  .title {
+    font-size: 1.8rem;
+  }
 }
 
-@media (min-width: 768px) {
+.content {
+  padding: 3rem;
+  color: var(--ids-text);
+  line-height: 1.8;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 1024px) {
   .content {
-    padding: 2rem;
-    line-height: 1.7;
-    font-size: 0.95rem;
+    padding: 4rem;
+    font-size: 1.8rem;
   }
 }

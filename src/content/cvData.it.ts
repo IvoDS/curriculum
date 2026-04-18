@@ -20,18 +20,30 @@ export const cvDataIt: CVData = {
                 "Sviluppo di soluzioni server per la gestione della distribuzione automatizzata dei DPI.",
                 "Sviluppo di soluzioni software su SoC per distributori e magazzini automatizzati."
             ],
-            technologies: ["React", "Node.js", "Docker", "Firmware", "Laravel", "Vue", "MySQL", "SQLite"]
+            technologies: ["React", "Node.js", "Docker", "Firmware", "Laravel", "Vue", "MySQL", "SQLite", "Git"]
         },
         {
-            company: "Web Agency Creative",
-            role: "Full Stack Developer",
-            period: "2018 - 2020",
+            company: "Col Giovanni Paolo S.p.A.",
+            role: "Firmware Developer",
+            period: "Luglio 2022 - Ottobre 2023",
             description: [
-                "Creazione di siti web e-commerce personalizzati.",
-                "Integrazione di sistemi di pagamento di terze parti.",
-                "Collaborazione con il team di design per UI/UX."
+                "Sviluppo di firmware per microcontrollori STMicroelectronics ARM Cortex M3.",
+                "Sviluppo di sistemi di calibrazione in linguaggio C#.",
+                "Integrazione con sistemi già esistenti di monitoraggio dell'energia elettrica."
             ],
-            technologies: ["Vue.js", "PHP", "MySQL"]
+            technologies: ["Firmware (C)", "C#", "Redis", "SVN"]
+        },
+        {
+            company: "Lanzi Group S.r.l.",
+            role: "Impiegato Ricerca e Sviluppo",
+            period: "Settembre 2017 - Giugno 2022",
+            description: [
+                "Sviluppo di firmware per microcontrollori Atmel con architettura AVR.",
+                "Sviluppo di sistemi di debug in linguaggio C#.",
+                "Assistenza a clienti finali italiani ed esteri.",
+                "Disegno meccanico con software CAD Rhinoceros 5"
+            ],
+            technologies: ["Firmware (C)", "C#", "Redis", "SVN"]
         }
     ],
     workSkills: [

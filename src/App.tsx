@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Globe, Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Globe, Github, Linkedin, Mail, Phone, MapPin, Menu, X } from 'lucide-react';
 import { getCVData, getPortfolio } from './content';
 import { TerminalCard } from './components/TerminalCard/TerminalCard';
 import logo from '@assets/logo-no-background.png';
@@ -12,13 +12,19 @@ import styles from './App.module.css';
 function App() {
   const { t, i18n } = useTranslation();
   const [activeSection, setActiveSection] = useState('contact');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const cvData = getCVData(i18n.language);
-  const portfolio = getPortfolio();
+  const portfolio = getPortfolio(i18n.language);
 
   const changeLanguage = (lng: string) => i18n.changeLanguage(lng);
 
   const sections = ['contact', 'experience', 'workSkills', 'softSkills', 'portfolio'];
+
+  const handleSectionChange = (section: string) => {
+    setActiveSection(section);
+    setIsMenuOpen(false);
+  };
 
   return (
     <div className={styles.container}>
@@ -27,20 +33,37 @@ function App() {
           <img src={logo} alt="IDS Logo" className={styles.logoImg} />
           <span className={styles.logoText}>IVAN DE STEFANI</span>
         </div>
-        <nav className={styles.nav}>
+
+        <button className={styles.burger} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          {isMenuOpen ? <X size={48} /> : <Menu size={48} />}
+        </button>
+
+        <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
           {sections.map(section => (
             <button 
               key={section}
-              onClick={() => setActiveSection(section)}
+              onClick={() => handleSectionChange(section)}
               className={activeSection === section ? styles.active : ''}
             >
               {t(`nav.${section}`)}
             </button>
           ))}
+          <div className={styles.mobileControls}>
+            <div className={styles.languageSwitcher}>
+              <Globe size={28} color="#50C878" />
+              <select onChange={(e) => changeLanguage(e.target.value)} value={i18n.language}>
+                <option value="it">IT</option>
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="es">ES</option>
+              </select>
+            </div>
+          </div>
         </nav>
-        <div className={styles.controls}>
+
+        <div className={styles.desktopControls}>
           <div className={styles.languageSwitcher}>
-            <Globe size={18} color="#50C878" />
+            <Globe size={24} color="#50C878" />
             <select onChange={(e) => changeLanguage(e.target.value)} value={i18n.language}>
               <option value="it">IT</option>
               <option value="en">EN</option>
@@ -157,8 +180,8 @@ function App() {
 
       <footer className={styles.footer}>
         <div className={styles.socials}>
-          <a href="#"><Github size={20}/></a>
-          <a href="#"><Linkedin size={20}/></a>
+          <a href="#"><Github size={32}/></a>
+          <a href="#"><Linkedin size={32}/></a>
         </div>
         <p>© 2026 IVAN DE STEFANI - BUILT_WITH_REACT_VITE</p>
       </footer>
