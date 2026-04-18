@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "contact": "Contacto",
+    "experience": "Experiencia",
+    "workSkills": "Competencias Técnicas",
+    "softSkills": "Competencias Transversales",
+    "portfolio": "Portfolio"
+  },
+  "contact": {
+    "title": "Información de Contacto"
+  },
+  "experience": {
+    "title": "Experiencia Laboral"
+  },
+  "workSkills": {
+    "title": "Habilidades Técnicas"
+  },
+  "softSkills": {
+    "title": "Habilidades Transversales"
+  },
+  "portfolio": {
+    "title": "Proyectos"
+  }
+}
