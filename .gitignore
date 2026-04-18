@@ -2,7 +2,8 @@
 /BRAND_GUIDELINES.md
 /DECISIONS.md
 /GEMINI.md
-/node_modules/
 /.idea/
 deploy.env
 /dist/
+/Caddyfile
+/node_modules/

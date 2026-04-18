@@ -15,11 +15,18 @@
 
 .header {
   background-color: rgba(80, 200, 120, 0.05);
-  padding: 0.8rem 1.2rem;
+  padding: 0.6rem 1rem;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   border-bottom: 1px solid rgba(80, 200, 120, 0.1);
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0.8rem 1.2rem;
+    gap: 1.5rem;
+  }
 }
 
 .dots {
@@ -48,8 +55,16 @@
 }
 
 .content {
-  padding: 2rem;
+  padding: 1.2rem;
   color: var(--ids-text);
-  line-height: 1.7;
-  font-size: 0.95rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: 2rem;
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
 }
