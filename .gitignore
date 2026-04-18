@@ -4,3 +4,5 @@
 /GEMINI.md
 /node_modules/
 /.idea/
+deploy.env
+/dist/
