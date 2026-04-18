@@ -17,10 +17,10 @@ export const cvDataIt: CVData = {
       period: "Ottobre 2023 - Presente",
       description: [
         "Sviluppo di firmware scalabili per microcontrollori ad architettura 8 e 32 bit (Microchip e STMicroelectronics).",
-        "Gestione di un team di 5 sviluppatori.",
-        "Ottimizzazione delle performance delle applicazioni web."
+        "Sviluppo di soluzioni server per la gestione della distribuzione automatizzata dei DPI.",
+        "Sviluppo di soluzioni software su SoC per distributori e magazzini automatizzati."
       ],
-      technologies: ["React", "Node.js", "Docker", "Firmware", "Laravel", ]
+      technologies: ["React", "Node.js", "Docker", "Firmware", "Laravel", "Vue", "MySQL", "SQLite"]
     },
     {
       company: "Web Agency Creative",
@@ -36,14 +36,14 @@ export const cvDataIt: CVData = {
   ],
   workSkills: [
     { name: "TypeScript", level: 5, category: "Frontend" },
-    { name: "React", level: 5, category: "Frontend" },
-    { name: "Node.js", level: 4, category: "Backend" },
+    { name: "React", level: 2, category: "Frontend" },
+    { name: "Node.js", level: 5, category: "Backend" },
     { name: "SQL", level: 4, category: "Backend" },
     { name: "Docker", level: 3, category: "DevOps" }
   ],
   softSkills: [
     "Problem Solving",
-    "Team Leadership",
+    "Lavoro in team",
     "Comunicazione Efficace",
     "Adattabilità"
   ]
