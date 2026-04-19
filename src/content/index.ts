@@ -3,6 +3,8 @@ import { cvDataEn } from './cvData.en';
 import { cvDataEs } from './cvData.es';
 import { cvDataFr } from './cvData.fr';
 import { CVData, PortfolioItem } from './types';
+import { project1 } from './portfolio/project-1';
+import { project2 } from './portfolio/project-2';
 
 const getPortfolioItems = (lang: string): PortfolioItem[] => {
   const titles: Record<string, string> = {
@@ -27,7 +29,9 @@ const getPortfolioItems = (lang: string): PortfolioItem[] => {
       logo: '../../assets/logo.png',
       link: 'https://github.com/IvoDS/curriculum',
       tags: ['React', 'TypeScript', 'Vite', 'CSS Modules']
-    }
+    },
+    project1,
+    project2
   ];
 };
 

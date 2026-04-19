@@ -160,8 +160,11 @@ function App() {
                 {portfolio.map(item => (
                   <a href={item.link} target="_blank" rel="noopener noreferrer" key={item.id} className={styles.portfolioCard}>
                     <div className={styles.portfolioLogo}>
-                      {/* Logo placeholder */}
-                      <div className={styles.logoBox}>{item.title[0]}</div>
+                      {item.logo ? (
+                        <img src={item.logo} alt={`${item.title} Logo`} className={styles.logoImage} />
+                      ) : (
+                        <div className={styles.logoBox}>{item.title[0]}</div>
+                      )}
                     </div>
                     <div className={styles.portfolioInfo}>
                       <h3>{item.title}</h3>
