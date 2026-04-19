@@ -183,8 +183,8 @@ function App() {
 
       <footer className={styles.footer}>
         <div className={styles.socials}>
-          <a href="#"><Github size={32}/></a>
-          <a href="#"><Linkedin size={32}/></a>
+          <a href="https://github.com/IvoDS"><Github size={32}/></a>
+          <a href="https://www.linkedin.com/in/ivan-de-stefani-8a81a1ba/"><Linkedin size={32}/></a>
         </div>
         <p>© 2026 IVAN DE STEFANI - BUILT_WITH_REACT_VITE</p>
       </footer>
