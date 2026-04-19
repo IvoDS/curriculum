@@ -432,10 +432,20 @@
   text-decoration: none;
   color: inherit;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 3.5rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
   transition: all 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  .portfolioCard {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 3.5rem;
+  }
 }
 
 .portfolioCard:hover {
@@ -516,6 +526,13 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: auto;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .tags {
+    justify-content: flex-start;
+  }
 }
 
 .tag {
