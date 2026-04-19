@@ -422,8 +422,9 @@
   text-decoration: none;
   color: inherit;
   display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3.5rem;
   transition: all 0.3s ease;
 }
 
@@ -463,26 +464,25 @@
 }
 
 .logoBox {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   background-color: #1a1a1a;
-  border: 2px solid var(--ids-sapphire);
+  border: 1px solid rgba(80, 200, 120, 0.2);
   border-radius: var(--ids-border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--ids-font-mono);
-  font-size: 2.5rem;
-  color: var(--ids-sapphire);
-  text-shadow: var(--ids-glow);
+  font-size: 3.5rem;
+  color: var(--ids-text);
 }
 
 .logoImage {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   border-radius: var(--ids-border-radius);
-  border: 2px solid var(--ids-sapphire);
+  border: 1px solid rgba(80, 200, 120, 0.2);
   background-color: #1a1a1a;
 }
 
