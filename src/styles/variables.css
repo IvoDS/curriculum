@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   /* Colors from BRAND_GUIDELINES.md */
   --ids-sapphire: #0f52ba;
