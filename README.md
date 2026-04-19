@@ -51,7 +51,7 @@ This project is a modern, high-performance portfolio application designed with a
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ivandestefani/curriculum.git
+   git clone https://github.com/IvoDS/curriculum.git
    ```
 
 2. **Install dependencies:**

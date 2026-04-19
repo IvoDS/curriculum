@@ -24,8 +24,8 @@ const getPortfolioItems = (lang: string): PortfolioItem[] => {
       id: 'curriculum-react',
       title: titles[lang] || titles['it'],
       description: descriptions[lang] || descriptions['it'],
-      logo: '/assets/logo.png',
-      link: 'https://github.com/ivandestefani/curriculum',
+      logo: '../../assets/logo.png',
+      link: 'https://github.com/IvoDS/curriculum',
       tags: ['React', 'TypeScript', 'Vite', 'CSS Modules']
     }
   ];
